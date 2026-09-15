@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+  --bg: #b8c7c3;
+  --text: #1B1523;
+  --text-muted: #5C5468;
+  --accent: #6B3FD6;      /* roxo escurecido, para texto/links (contraste AA) */
+  --accent-bright: #7F52FF; /* roxo Kotlin puro, só decoração */
+  --accent-secondary: #F88909; /* laranja Kotlin */
+  --border: #E4DFF0;
+  --max-width: 640px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  padding: 3rem 1.5rem;
+}
+
+header,
+main,
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* --- Header: foto + nome lado a lado --- */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+header img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-bright);
+  flex-shrink: 0;
+}
+
+header h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.3rem 0;
+}
+
+header p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* --- Secções: título estilo comentário de código --- */
+main {
+  padding-top: 2rem;
+}
+
+section {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--accent);
+  margin: 0 0 0.9rem 0;
+}
+
+section h2::before {
+  content: "// ";
+  color: var(--accent-secondary);
+}
+
+section p {
+  margin: 0;
+}
+
+/* --- Listas (hobbies e redes) --- */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#hobbies li {
+  padding-left: 1.2rem;
+  position: relative;
+  margin-bottom: 0.4rem;
+}
+
+#hobbies li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--accent-secondary);
+}
+
+#redes ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#redes a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+#redes a:hover,
+#redes a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent-secondary);
+}
+
+/* --- Acessibilidade: foco visível em qualquer elemento focável --- */
+a:focus-visible,
+img:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+
+/* --- Footer --- */
+footer {
+  padding-top: 2rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* --- Responsivo: header empilha em ecrãs pequenos --- */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  #redes ul {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+/* --- Respeita utilizadores que desativam animação --- */
+@media (prefers-reduced-motion: reduce) {
+  #redes a {
+    transition: none;
+  }
+}
