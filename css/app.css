@@ -103,7 +103,7 @@ ul {
 .server-icon:hover::before {
   height: 20px;
 }
-    
+
 .server-icon.active::before {
   height: 40px;
 }
@@ -148,3 +148,4 @@ ul {
   padding: 0 16px;
   display: flex;
   align-items: center;
+}
