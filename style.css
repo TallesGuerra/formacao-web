@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f3f5;
+    color: #222;
+}
+
+main {
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 26px;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+caption {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #d9d9d9;
+    text-align: center;
+}
+
+tbody th {
+    font-weight: normal;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8efe2;
+}
+
+tbody tr:hover {
+    background-color: #e8f0fb;
+}
+
+.numero {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.status {
+    display: inline-block;
+    font-size: 13px;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.disponivel {
+    background-color: #cdeccd;
+    color: #1e6b1e;
+}
+
+.baixo {
+    background-color: #ffe2b3;
+    color: #8a5300;
+}
+
+.esgotado {
+    background-color: #f8c6c6;
+    color: #9b1c1c;
+}
+
+tfoot th,
+tfoot td {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+}
