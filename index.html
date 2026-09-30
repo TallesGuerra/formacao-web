@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- coluna 1: servidores -->
+    <nav class="servers" aria-label="Servidores">
+      <a href="#" class="server-icon home" title="Mensagens diretas">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+      </a>
+
+      <div class="servers-divider"></div>
+
+      <a href="#" class="server-icon active" title="Nova Era Dev">NE</a>
+      <a href="#" class="server-icon" title="Front-end Brasil">FB</a>
+      <a href="#" class="server-icon" title="Games">GM</a>
+      <a href="#" class="server-icon" title="Estudos">ES</a>
+
+      <a href="#" class="server-icon add" title="Adicionar servidor">+</a>
+    </nav>
+
+    <!-- coluna 2: canais -->
+    <aside class="channels">
+      <header class="channels-header">
+        <h1>Nova Era Dev</h1>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </header>
+
+      <div class="channels-list">
+        <section class="channel-group">
+          <h2 class="channel-group-title">Canais de texto</h2>
+          <ul>
+            <li><a href="#" class="channel active"><span class="hash">#</span> geral</a></li>
+            <li><a href="#" class="channel"><span class="hash">#</span> avisos</a></li>
+            <li><a href="#" class="channel"><span class="hash">#</span> html-css</a></li>
+            <li><a href="#" class="channel"><span class="hash">#</span> javascript</a></li>
+            <li><a href="#" class="channel"><span class="hash">#</span> duvidas</a></li>
+            <li><a href="#" class="channel"><span class="hash">#</span> off-topic</a></li>
+          </ul>
+        </section>
+
+        <section class="channel-group">
+          <h2 class="channel-group-title">Canais de voz</h2>
+          <ul>
+            <li>
+              <a href="#" class="channel">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+                </svg>
+                Sala de estudo
+              </a>
+            </li>
+            <li>
+              <a href="#" class="channel">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M15.5 8.5a5 5 0 0 1 0 7"/>
+                </svg>
+                Bate-papo
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <footer class="user-panel">
+        <div class="avatar">TG</div>
+        <div class="user-info">
+          <strong>talles</strong>
+          <span>Online</span>
+        </div>
+      </footer>
+    </aside>
+
+    <!-- coluna 3: area principal -->
+    <main class="chat">
+      <header class="chat-header">
+        <span class="hash">#</span>
+        <h2>geral</h2>
+        <span class="chat-topic">Conversa livre da turma</span>
+      </header>
+
+      <div class="messages">
+        <article class="message">
+          <div class="avatar" style="background:#5865f2">AN</div>
+          <div>
+            <p class="message-meta"><strong>ana</strong> <time>Hoje às 09:12</time></p>
+            <p>Bom dia! Alguém já começou o desafio 12?</p>
+          </div>
+        </article>
+
+        <article class="message">
+          <div class="avatar" style="background:#3ba55c">RB</div>
+          <div>
+            <p class="message-meta"><strong>rafa.b</strong> <time>Hoje às 09:15</time></p>
+            <p>Comecei ontem. Travei um pouco no flexbox das três colunas, mas já saiu.</p>
+          </div>
+        </article>
+
+        <article class="message">
+          <div class="avatar" style="background:#eb459e">TG</div>
+          <div>
+            <p class="message-meta"><strong>talles</strong> <time>Hoje às 09:20</time></p>
+            <p>Usei height: 100vh no container e deixei só a lista de mensagens com scroll.</p>
+          </div>
+        </article>
+      </div>
+
+      <form class="message-form" onsubmit="return false">
+        <label for="msg" class="sr-only">Mensagem</label>
+        <input type="text" id="msg" placeholder="Conversar em #geral">
+      </form>
+    </main>
+
+  </div>
+</body>
+</html>
