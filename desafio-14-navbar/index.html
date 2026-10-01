@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-icon">T</span>
+        <span>Talles<span class="logo-dot">.dev</span></span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu">
+        <span></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#" class="menu-link" aria-current="page">Início</a></li>
+        <li><a href="#" class="menu-link">Sobre</a></li>
+
+        <li class="has-submenu">
+          <a href="#" class="menu-link">Serviços</a>
+          <ul class="submenu">
+            <li><a href="#">Desenvolvimento web</a></li>
+            <li><a href="#">Aplicativos</a></li>
+            <li><a href="#">Consultoria</a></li>
+          </ul>
+        </li>
+
+        <li class="has-submenu">
+          <a href="#" class="menu-link">Projetos</a>
+          <ul class="submenu">
+            <li><a href="#">Em andamento</a></li>
+            <li><a href="#">Finalizados</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" class="menu-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>Desafio 14 - Navbar</h1>
+    <p>Passe o mouse em "Serviços" ou "Projetos" para ver o submenu.</p>
+  </main>
+
+</body>
+</html>
