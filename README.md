@@ -7,6 +7,7 @@ Meus desafios da Formação Web. Antes cada um ficava num repositório separado,
 | 01 - Página pessoal | [desafio-01-pagina-pessoal](desafio-01-pagina-pessoal) |
 | 02 - Lista de animes | [desafio-02-lista-animes](desafio-02-lista-animes) |
 | 04 - Tabela de produtos | [desafio-04-tabela-produtos](desafio-04-tabela-produtos) |
+| 05 - Portal de notícias | [desafio-05-portal-noticias](desafio-05-portal-noticias) |
 | 06 - Card de produto | [desafio-06-card-produto](desafio-06-card-produto) |
 | 08 - Perfil do Instagram | [desafio-08-instagram-profile](desafio-08-instagram-profile) |
 | 10 - Página de login | [desafio-10-login-page](desafio-10-login-page) |
