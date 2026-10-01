@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Era Notícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+    <header class="cabecalho">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Nova Era Notícias</a></h1>
+            <p class="slogan">Sua fonte de informação diária</p>
+            <p class="data"><time datetime="2026-10-01">Quinta-feira, 1 de outubro de 2026</time></p>
+        </div>
+
+        <nav class="menu" aria-label="Menu principal">
+            <ul class="container">
+                <li><a href="#topo">Início</a></li>
+                <li><a href="#cidades">Cidades</a></li>
+                <li><a href="#economia">Economia</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#educacao">Educação</a></li>
+                <li><a href="#cultura">Cultura</a></li>
+                <li><a href="#esportes">Esportes</a></li>
+                <li><a class="menu-formacao" href="https://github.com/TallesGuerra/formacao-web" target="_blank" rel="noopener">Formação Web</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container layout">
+        <main>
+            <section class="secao" aria-labelledby="titulo-destaque">
+                <h2 id="titulo-destaque" class="visualmente-oculto">Em destaque</h2>
+
+                <article id="cidades" class="noticia-destaque">
+                    <img src="img/cidades.jpg" alt="Prédios do centro da cidade vistos do alto ao entardecer">
+                    <div class="destaque-texto">
+                        <p class="categoria">Cidades</p>
+                        <h3><a href="noticias/semaforos-inteligentes.html">Semáforos que se ajustam ao trânsito começam a funcionar no centro</a></h3>
+                        <p>Os 42 cruzamentos da Avenida Central agora mudam o tempo de sinal verde conforme a fila de carros. A prefeitura diz que o trajeto no horário de pico ficou 6 minutos mais curto no primeiro mês de testes.</p>
+                        <a class="leia-mais" href="noticias/semaforos-inteligentes.html">Leia mais</a>
+                    </div>
+                </article>
+            </section>
+
+            <section class="secao" aria-labelledby="titulo-mais">
+                <h2 id="titulo-mais" class="titulo-secao">Mais notícias</h2>
+
+                <div class="grade-noticias">
+                    <article id="economia" class="noticia">
+                        <img src="img/economia.jpg" alt="Gráfico de ações com linhas coloridas em uma tela escura">
+                        <p class="categoria">Economia</p>
+                        <h3><a href="noticias/vendas-fim-de-ano.html">Comércio espera vender 8% a mais no fim de ano</a></h3>
+                        <p>A associação dos lojistas aposta no 13º salário e na queda dos juros. Lojas do centro já começaram a contratar temporários.</p>
+                        <p class="meta"><time datetime="2026-10-01">1 de outubro</time></p>
+                        <a class="leia-mais" href="noticias/vendas-fim-de-ano.html">Leia mais</a>
+                    </article>
+
+                    <article id="tecnologia" class="noticia">
+                        <img src="img/tecnologia.jpg" alt="Placa de circuito eletrônico vista de perto">
+                        <p class="categoria">Tecnologia</p>
+                        <h3><a href="noticias/app-onibus-lotado.html">App criado na cidade avisa quando o ônibus está lotado</a></h3>
+                        <p>Três ex-alunos da universidade federal usam a catraca eletrônica para estimar quantas pessoas estão em cada veículo.</p>
+                        <p class="meta"><time datetime="2026-09-30">30 de setembro</time></p>
+                        <a class="leia-mais" href="noticias/app-onibus-lotado.html">Leia mais</a>
+                    </article>
+
+                    <article id="educacao" class="noticia">
+                        <img src="img/educacao.jpg" alt="Três estudantes conversando em volta de uma mesa com notebooks">
+                        <p class="categoria">Educação</p>
+                        <h3><a href="noticias/vagas-programacao.html">Escolas estaduais abrem 2 mil vagas em cursos de programação</a></h3>
+                        <p>As aulas são no contraturno e valem para alunos do 1º ao 3º ano do ensino médio. As inscrições vão até o dia 20.</p>
+                        <p class="meta"><time datetime="2026-09-30">30 de setembro</time></p>
+                        <a class="leia-mais" href="noticias/vagas-programacao.html">Leia mais</a>
+                    </article>
+
+                    <article id="cultura" class="noticia">
+                        <img src="img/cultura.jpg" alt="Show com luzes coloridas e papel picado no ar">
+                        <p class="categoria">Cultura</p>
+                        <h3><a href="noticias/festival-porto.html">Festival de música ocupa o porto velho neste fim de semana</a></h3>
+                        <p>São 18 atrações em dois palcos, de sexta a domingo. A entrada é gratuita, mas é preciso retirar o ingresso pelo site.</p>
+                        <p class="meta"><time datetime="2026-09-29">29 de setembro</time></p>
+                        <a class="leia-mais" href="noticias/festival-porto.html">Leia mais</a>
+                    </article>
+
+                    <article id="esportes" class="noticia">
+                        <img src="img/esportes.jpg" alt="Atleta agachado na posição de largada em uma pista de corrida">
+                        <p class="categoria">Esportes</p>
+                        <h3><a href="noticias/meia-maratona.html">Meia maratona deve reunir 4 mil corredores no domingo</a></h3>
+                        <p>A largada é às 6h na orla. Seis avenidas ficam fechadas até as 11h, e as linhas de ônibus da região mudam de trajeto.</p>
+                        <p class="meta"><time datetime="2026-09-29">29 de setembro</time></p>
+                        <a class="leia-mais" href="noticias/meia-maratona.html">Leia mais</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section class="bloco-lateral">
+                <h2>Mais lidas</h2>
+                <ol class="mais-lidas">
+                    <li><a href="noticias/semaforos-inteligentes.html">Semáforos que se ajustam ao trânsito começam a funcionar no centro</a></li>
+                    <li><a href="noticias/meia-maratona.html">Meia maratona deve reunir 4 mil corredores no domingo</a></li>
+                    <li><a href="noticias/app-onibus-lotado.html">App criado na cidade avisa quando o ônibus está lotado</a></li>
+                    <li><a href="noticias/vagas-programacao.html">Escolas estaduais abrem 2 mil vagas em cursos de programação</a></li>
+                </ol>
+            </section>
+
+            <section class="bloco-lateral">
+                <h2>Destaques da semana</h2>
+                <ul class="destaques-semana">
+                    <li>
+                        <a href="noticias/festival-porto.html">
+                            <img src="img/cultura.jpg" alt="">
+                            <span>Programação completa do festival no porto velho</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="noticias/vendas-fim-de-ano.html">
+                            <img src="img/economia.jpg" alt="">
+                            <span>Lojistas já contratam temporários para o fim de ano</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="bloco-lateral">
+                <h2>Categorias</h2>
+                <ul class="categorias">
+                    <li><a href="#cidades">Cidades</a></li>
+                    <li><a href="#economia">Economia</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#educacao">Educação</a></li>
+                    <li><a href="#cultura">Cultura</a></li>
+                    <li><a href="#esportes">Esportes</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Nova Era Notícias</strong> - Desafio 05 da Formação Web, Escola Nova Era</p>
+            <p>As notícias são fictícias e foram escritas para o desafio. Fotos: Unsplash.</p>
+            <a href="#topo">Voltar ao topo</a>
