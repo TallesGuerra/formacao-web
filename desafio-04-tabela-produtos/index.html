@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque do Armazém da Nova Era</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Estoque do Armazém da Nova Era</h1>
+
+        <div class="tabela-container">
+            <table>
+                <caption>Tabela de Produtos</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Qtd. em Estoque</th>
+                        <th scope="col">Disponibilidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <th scope="row">Martelo de Borracha</th>
+                        <td>Ferramentas</td>
+                        <td class="numero">R$ 29,90</td>
+                        <td class="numero">150</td>
+                        <td><span class="status disponivel">Disponível</span></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <th scope="row">Serra Circular XYZ</th>
+                        <td>Ferramentas</td>
+                        <td class="numero">R$ 349,00</td>
+                        <td class="numero">45</td>
+                        <td><span class="status baixo">Estoque baixo</span></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <th scope="row">Piso Cerâmico Bege 50x50</th>
+                        <td>Construção</td>
+                        <td class="numero">R$ 55,00/m²</td>
+                        <td class="numero">500 m²</td>
+                        <td><span class="status disponivel">Disponível</span></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <th scope="row">Tinta Acrílica Branca 18L</th>
+                        <td>Acabamento</td>
+                        <td class="numero">R$ 210,00</td>
+                        <td class="numero">80</td>
+                        <td><span class="status baixo">Estoque baixo</span></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <th scope="row">Parafusos Variados (1000 un.)</th>
+                        <td>Fixação</td>
+                        <td class="numero">R$ 45,00</td>
+                        <td class="numero">1200</td>
+                        <td><span class="status disponivel">Disponível</span></td>
+                    </tr>
+                    <tr>
+                        <td>006</td>
+                        <th scope="row">Caixa de Ferramentas Pro</th>
+                        <td>Ferramentas</td>
+                        <td class="numero">R$ 180,00</td>
+                        <td class="numero">60</td>
+                        <td><span class="status baixo">Estoque baixo</span></td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <th scope="row">Lâmpada LED E27 10W</th>
+                        <td>Elétrica</td>
+                        <td class="numero">R$ 12,50</td>
+                        <td class="numero">950</td>
+                        <td><span class="status disponivel">Disponível</span></td>
+                    </tr>
+                    <tr>
+                        <td>008</td>
+                        <th scope="row">Interruptor Inteligente Wi-Fi</th>
+                        <td>Domótica</td>
+                        <td class="numero">R$ 79,90</td>
+                        <td class="numero">30</td>
+                        <td><span class="status baixo">Estoque baixo</span></td>
+                    </tr>
+                    <tr>
+                        <td>009</td>
+                        <th scope="row">Pincel Profissional 2"</th>
+                        <td>Acabamento</td>
+                        <td class="numero">R$ 15,90</td>
+                        <td class="numero">200</td>
+                        <td><span class="status disponivel">Disponível</span></td>
+                    </tr>
+                    <tr>
+                        <td>010</td>
+                        <th scope="row">Fita Isolante 20m</th>
+                        <td>Elétrica</td>
+                        <td class="numero">R$ 8,90</td>
+                        <td class="numero">0</td>
+                        <td><span class="status esgotado">Esgotado</span></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">Total de produtos cadastrados</th>
+                        <td class="numero" colspan="2">10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Itens em estoque (unidades + m²)</th>
+                        <td class="numero" colspan="2">3215</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4">Valor total do estoque</th>
+                        <td class="numero" colspan="2">R$ 146.742,00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Escola Nova Era</strong> - Desafio 04 - HTML Tabela</p>
+    </footer>
+
+</body>
+</html>
