@@ -1,0 +1,151 @@
+/* cores tiradas do tema escuro do Discord */
+:root {
+  --bg-servers: #1e1f22;
+  --bg-channels: #2b2d31;
+  --bg-chat: #313338;
+  --bg-input: #383a40;
+  --bg-hover: #35373c;
+  --bg-active: #404249;
+  --text: #dbdee1;
+  --text-muted: #949ba4;
+  --text-strong: #f2f3f5;
+  --blurple: #5865f2;
+  --green: #23a559;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--bg-chat);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* esconde o label mas mantem pra leitor de tela */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+/* ---------- layout geral ---------- */
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ---------- servidores ---------- */
+
+.servers {
+  width: 72px;
+  height: 100vh;
+  background: var(--bg-servers);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.server-icon {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-chat);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 15px;
+  transition: border-radius 0.2s, background 0.2s;
+}
+
+.server-icon:hover,
+.server-icon.active {
+  border-radius: 16px;
+  background: var(--blurple);
+  color: #fff;
+}
+
+/* barrinha branca do lado esquerdo */
+.server-icon::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  width: 4px;
+  height: 0;
+  background: #fff;
+  border-radius: 0 4px 4px 0;
+  transition: height 0.2s;
+}
+
+.server-icon:hover::before {
+  height: 20px;
+}
+
+.server-icon.active::before {
+  height: 40px;
+}
+
+.server-icon.home {
+  background: var(--blurple);
+  color: #fff;
+  border-radius: 16px;
+}
+
+.server-icon.add {
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.server-icon.add:hover {
+  background: var(--green);
+  color: #fff;
+}
+
+.servers-divider {
+  width: 32px;
+  height: 2px;
+  background: var(--bg-input);
+  border-radius: 1px;
+}
+
+/* ---------- canais ---------- */
+
+.channels {
+  width: 240px;
+  height: 100vh;
+  background: var(--bg-channels);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.channels-header {
+  height: 48px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}

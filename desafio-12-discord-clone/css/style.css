@@ -1,0 +1,151 @@
+:root {
+  --blurple: #5865f2;
+  --blurple-hover: #4752c4;
+  --bg-dark: #1e1f22;
+  --bg-card: #2b2d31;
+  --bg-section: #313338;
+  --text: #dbdee1;
+  --text-muted: #b5bac1;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--bg-section);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- botoes ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--blurple);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--blurple-hover);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn-dark {
+  background: var(--bg-card);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: #404249;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn-light {
+  background: var(--white);
+  color: #23272a;
+}
+
+.btn-light:hover {
+  color: var(--blurple);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- navbar ---------- */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-dark);
+}
+
+.navbar-content {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--white);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  background-image: url("../img/hero-bg.svg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  padding: 100px 0 160px;
+}
+
+.hero-content {
+  max-width: 820px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
